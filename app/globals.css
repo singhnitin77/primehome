@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.navbar-container {
+  background: linear-gradient(126.95deg, #91a2cd 0%, #008716 51.69%),
+    linear-gradient(126.95deg, #ffffff 0%, #00273d 49.48%),
+    radial-gradient(100% 216.55% at 100% 100%, #a4be00 0%, #6100ff 100%),
+    linear-gradient(307.27deg, #1dac92 0.37%, #2800c6 100%),
+    radial-gradient(
+      100% 140% at 100% 0%,
+
+      #006c7a 57.29%,
+      #2200aa 100%
+    );
+  background-blend-mode: overlay, overlay, difference, difference, normal;
+}
+
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+}
+
+/* Menu toggle animation */
+/* mobile menu toggle button */
+.menu-toggle span {
+  margin: 0 auto;
+  position: relative;
+  transition-duration: 0s;
+  transition-delay: 0.2s;
+  margin: 8px 0px;
+  transition: background-color 0.3s;
+}
+
+.menu-toggle span:before,
+.menu-toggle span:after {
+  position: absolute;
+  content: "";
+}
+
+.menu-toggle span,
+.menu-toggle span:before,
+.menu-toggle span:after {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  opacity: 1;
+}
+
+.menu-toggle span:before {
+  margin-top: -6px;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0;
+}
+
+.menu-toggle span:after {
+  margin-top: 6px;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0;
+}
+
+.menu-toggle-active span {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s background-color;
+}
+
+.menu-toggle-active span:before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0, 0.2s;
+}
+
+.menu-toggle-active span:after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0, 0.2s;
+}

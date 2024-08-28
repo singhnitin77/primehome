@@ -1,0 +1,10 @@
+export { default as HeroSection } from "./hero";
+export { default as AboutSection } from "./about";
+export { default as OurServices } from "./services";
+export { default as ChooseUs } from "./whyus";
+export { default as InvestYamuna } from "./investinyamuna";
+export { default as Testimonals } from "./testimonials";
+export { default as LatestNews } from "./latestnews";
+export { default as CTA } from "./cta";
+export { default as Footer } from "./footer";
+export { default as Navbar } from "./navbar";

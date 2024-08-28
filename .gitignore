@@ -1,3 +1,26 @@
+# Node.js dependencies
 node_modules/
 
+# Compiled output
 .next/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env*
+gcp*.json
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directory
+# Uncomment the line below if you're using Yarn
+# pnpm-lock.yaml
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
