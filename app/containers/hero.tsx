@@ -17,11 +17,9 @@ const HeroLayout = () => {
               We help Discover your Dream Home
             </h1>
             <p className="leading-[1.35] text-[16px] md:text-[16px] lg:text-[18px] text-[#161C2D] font-regular mt-[20px] mb-[32px]">
-              At Prime Home Propmart, we’re dedicated to helping you find the
-              perfect place to call home. Explore our curated listings and
-              discover your dream home with us, where quality, comfort, and your
-              satisfaction are our top priorities
+              At Prime Home Propmart, we&rsquo;re dedicated to helping you find the perfect place to call home. Explore our curated listings and discover your dream home with us, where quality, comfort, and your satisfaction are our top priorities.
             </p>
+
 
             <a
               href="#"

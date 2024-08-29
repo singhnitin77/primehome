@@ -14,8 +14,9 @@ export default function CTA() {
           <div className="p-10 text-white">
             <h2 className="text-4xl font-bold mb-3">Ready to Make a Move?</h2>
             <p className="text-lg mb-7">
-              Whether you're buying your first home or looking for an investment property, we're here to help you every step of the way. Get in touch with us to start your journey to finding the perfect property.
+              Whether you&apos;re buying your first home or looking for an investment property, we&apos;re here to help you every step of the way. Get in touch with us to start your journey to finding the perfect property.
             </p>
+
 
             <form
               className="grid grid-cols-1 sm:grid-cols-2 gap-6"

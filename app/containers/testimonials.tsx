@@ -10,7 +10,7 @@ const Testimonials = () => {
       name: 'Dianne Russell',
       position: 'Manager Director',
       review:
-        'Best! I got the house I wanted through Hounter. Through this website, I can get a house with the type and specifications I want very easily',
+        'Best! I got the house I wanted through Hounter. Through this website, I can get a house with the type and specifications I want very easily.',
       rating: 4.6,
       avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
     },
@@ -33,6 +33,7 @@ const Testimonials = () => {
       avatar: 'https://randomuser.me/api/portraits/women/25.jpg',
     },
   ];
+
 
   const length = testimonials.length;
 
@@ -102,8 +103,9 @@ const Testimonials = () => {
               {index === current && (
                 <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-lg shadow-lg h-full flex flex-col justify-center">
                   <p className="text-base md:text-lg lg:text-xl mb-4">
-                    "{testimonial.review}"
+                    &quot;{testimonial.review}&quot;
                   </p>
+
                   <div className="flex flex-row items-center justify-between">
                     <div className="flex items-center">
                       <img

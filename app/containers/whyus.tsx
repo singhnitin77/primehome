@@ -7,7 +7,7 @@ const WhyUs = () => {
       bg: '#E1F0DA',
       title: 'Over 25 Years of Experience',
       description:
-        'At Prime Home Propmart, we’ve been helping people in Greater Noida find their dream homes for over 25 years. Your goals become our mission, and your dreams are our motivation.',
+        'At Prime Home Propmart, we&rsquo;ve been helping people in Greater Noida find their dream homes for over 25 years. Your goals become our mission, and your dreams are our motivation.',
     },
     {
       icon: '📍',
@@ -28,9 +28,10 @@ const WhyUs = () => {
       bg: '#F1F1F1',
       title: 'Client Satisfaction & Well-being',
       description:
-        'Our clients trust us because we truly care about their satisfaction. As one client said, "Prime Home Propmart isn’t just about selling properties; they care about your happiness, both financially and personally."',
+        'Our clients trust us because we truly care about their satisfaction. As one client said, &quot;Prime Home Propmart isn&rsquo;t just about selling properties; they care about your happiness, both financially and personally.&quot;',
     },
   ];
+
 
   return (
     <div className="px-[25px] md:px-[75px] py-[30px] md:py-[60px]">
