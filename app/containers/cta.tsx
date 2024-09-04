@@ -20,8 +20,10 @@ export default function CTA() {
 
             <form
               className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-              action="https://formsubmit.co/omshreetraders07@gmail.com"
+              // action="https://formsubmit.co/omshreetraders07@gmail.com"
               method="POST"
+              data-netlify="true"
+              name="contact"
             >
               <div>
                 <label htmlFor="full-name" className="block text-sm font-medium mb-2">Full Name</label>
