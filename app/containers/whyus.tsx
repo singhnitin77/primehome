@@ -6,9 +6,9 @@ const WhyUs = () => {
     {
       icon: '🏆',
       bg: '#E1F0DA',
-      title: 'Over 25 Years of Experience',
+      title: 'Over 10 Years of Experience',
       description:
-        `At Prime Home Propmart, we&rsquo;ve been helping people in Greater Noida find their dream homes for over 25 years. Your goals become our mission, and your dreams are our motivation.`,
+        `At Prime Home Propmart, we&rsquo;ve been helping people in Greater Noida find their dream homes for over 10 years. Your goals become our mission, and your dreams are our motivation.`,
     },
     {
       icon: '📍',
