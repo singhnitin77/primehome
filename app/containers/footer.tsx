@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Company Info */}
         <div className="flex flex-col space-y-4">
-          <img src="/logo.png" alt="Company Logo" className="w-20 h-20" />
+          <img src="/assets/logoPrime.png" alt="Company Logo" className="w-[180px] h-auto" />
           <p className="text-sm leading-6">
             Prime Home Propmart is one of the fastest growing real estate companies. We offer the best real estate services, aiming to transform the industry by providing top-notch residential, commercial, and industrial properties.
           </p>

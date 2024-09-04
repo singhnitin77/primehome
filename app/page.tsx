@@ -12,6 +12,7 @@ import {
 } from "./containers";
 import Testimonials from "./containers/testimonials";
 import { Box } from "@mui/material";
+import WhatsappButton from "./components/WhatsappButton";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       {/* <LatestNews /> */}
       <CTA />
       <Footer />
+      <WhatsappButton />
     </Box>
   );
 }
