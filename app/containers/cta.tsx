@@ -34,11 +34,11 @@ export default function CTA() {
 
       if (response.ok) {
         setStatus('Your message has been sent successfully!');
-        toast.success('Your message has been sent successfully!')
+        // toast.success('Your message has been sent successfully!')
         setError(null);
       } else {
         // throw new Error('Failed to send your message. Please try again later.');
-        toast.error('Failed to send your message. Please try again later.')
+        // toast.error('Failed to send your message. Please try again later.')
       }
     } catch (error) {
       setStatus(null);
