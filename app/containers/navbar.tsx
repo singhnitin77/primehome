@@ -12,11 +12,11 @@ interface NavItem {
 
 // Navigation items list
 const navItems: NavItem[] = [
-  { path: "/tints-shades", label: "About" },
-  { path: "/gradient-generator", label: "Services" },
-  { path: "/features", label: "Blogs" },
-  { path: "/about", label: "Youtube" },
-  { path: "/about", label: "Testimonials" },
+  { path: "#about-us", label: "About" },
+  { path: "#why-us", label: "Why Us" },
+  { path: "#services", label: "Services" },
+  { path: "#invest-in-yamuna", label: "Invest in Yamuna" },
+  { path: "#cta", label: "Contact" },
 ];
 
 const Navbar: React.FC = () => {
@@ -63,9 +63,8 @@ const Navbar: React.FC = () => {
           onClick={() => setShowNav(!showNav)}
         >
           <div
-            className={`dark:text-white duration-500 px-3 py-[10px] text-lg capitalize rounded-lg font-semibold flex items-center justify-center menu-toggle ${
-              showNav ? "menu-toggle-active" : ""
-            }`}
+            className={`dark:text-white duration-500 px-3 py-[10px] text-lg capitalize rounded-lg font-semibold flex items-center justify-center menu-toggle ${showNav ? "menu-toggle-active" : ""
+              }`}
           >
             <span></span>
           </div>

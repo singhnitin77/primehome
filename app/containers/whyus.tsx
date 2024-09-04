@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 
 const WhyUs = () => {
   const data = [
@@ -7,7 +8,7 @@ const WhyUs = () => {
       bg: '#E1F0DA',
       title: 'Over 25 Years of Experience',
       description:
-        'At Prime Home Propmart, we&rsquo;ve been helping people in Greater Noida find their dream homes for over 25 years. Your goals become our mission, and your dreams are our motivation.',
+        `At Prime Home Propmart, we&rsquo;ve been helping people in Greater Noida find their dream homes for over 25 years. Your goals become our mission, and your dreams are our motivation.`,
     },
     {
       icon: '📍',
@@ -34,7 +35,7 @@ const WhyUs = () => {
 
 
   return (
-    <div className="px-[25px] md:px-[75px] py-[30px] md:py-[60px]">
+    <div id='why-us' className="px-[25px] md:px-[75px] py-[30px] md:py-[60px]">
       <h2 className="text-[30px] md:text-[40px] lg:text-[48px] leading-[1.1] md:leading-[1.25] text-black font-bold text-center mb-8">
         Why should you trust Us!
       </h2>
@@ -49,7 +50,7 @@ const WhyUs = () => {
           >
             <div className="text-3xl mb-4">{item.icon}</div>
             <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-            <p className="text-gray-700">{item.description}</p>
+            {parse(`<p className="text-gray-700">${item.description} </p>`)}
           </div>
         ))}
       </div>
@@ -58,3 +59,4 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
+

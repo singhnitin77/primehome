@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 
@@ -15,7 +16,12 @@ export default function Footer() {
             <a href="#" className="text-gray-800 hover:text-blue-500 transition-colors duration-300">
               <FaFacebookF className="w-5 h-5 hover:scale-110 transition-transform duration-300" />
             </a>
-            <a href="#" className="text-gray-800 hover:text-pink-500 transition-colors duration-300">
+            <a
+              href="https://www.instagram.com/primehome.propmart"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-pink-500 transition-colors duration-300"
+            >
               <FaInstagram className="w-5 h-5 hover:scale-110 transition-transform duration-300" />
             </a>
             <a href="#" className="text-gray-800 hover:text-red-500 transition-colors duration-300">
@@ -31,7 +37,7 @@ export default function Footer() {
             <strong>Phone:</strong><br />
             +91 99900 67877<br />
             {/* +91 9800500700<br /> */}
-            +91 99900 67877<br /><br />
+            +91 70115 50271<br /><br />
             <strong>Our offices:</strong><br />
             1st Floor, A-4 Omaxe India Trade Centre, Alpha-II, Greater Noida, Uttar Pradesh
           </p>
@@ -42,7 +48,7 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-4">Schedule a Visit</h2>
           <div className="space-y-2">
             <p className="text-lg font-semibold text-[#4361EE]">+91 99900 67877</p>
-            <p className="text-lg font-semibold text-[#4361EE]">+91 99900 67877</p>
+            <p className="text-lg font-semibold text-[#4361EE]">+91 70115 50271</p>
           </div>
           <p className="text-sm mt-4">
             Contact us now for a visit or email us at <br />

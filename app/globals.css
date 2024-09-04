@@ -37,12 +37,10 @@ body {
     linear-gradient(126.95deg, #ffffff 0%, #00273d 49.48%),
     radial-gradient(100% 216.55% at 100% 100%, #a4be00 0%, #6100ff 100%),
     linear-gradient(307.27deg, #1dac92 0.37%, #2800c6 100%),
-    radial-gradient(
-      100% 140% at 100% 0%,
+    radial-gradient(100% 140% at 100% 0%,
 
       #006c7a 57.29%,
-      #2200aa 100%
-    );
+      #2200aa 100%);
   background-blend-mode: overlay, overlay, difference, difference, normal;
 }
 

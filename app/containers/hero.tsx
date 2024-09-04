@@ -8,7 +8,7 @@ const HeroLayout = () => {
         <div className="flex flex-col md:flex-row px-[25px] md:px-[75px] py-[30px] md:py-[80px] h-auto min-h-[95vh] overflow-hidden transition duration-300">
           <div className="flex flex-1 justify-center items-start flex-col md:mr-[20px]">
             <h4
-              className="text-[16px] lg:text-[20px] text-[#4361EE] font-medium"
+              className="text-[16px] lg:text-[20px] text-[#4361EE] font-medium sm:mb-3"
               style={{ letterSpacing: "2px" }}
             >
               PRIME HOME PROPMART

@@ -6,32 +6,34 @@ import { useTheme, useMediaQuery } from '@mui/material';
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Acquisition Lands',
-    description: 'Explore premium acquisition lands ideal for future developments and investments.',
+    img: 'https://ik.imagekit.io/6djsamqli/primehomepropmart/semi-commercial_pvo7SYSht.png?updatedAt=1725427902523',
+    title: 'Semi-Commercial Plots',
+    description: 'Semi-commercial plots ideal for businesses and small enterprises with residential options.',
     cols: 2,
     rows: 2
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: 'https://ik.imagekit.io/6djsamqli/primehomepropmart/aquisition-land_rCRD8C0tb.png?updatedAt=1725427965593',
+    title: 'Acquisition Lands',
+    description: 'Explore premium acquisition lands ideal for future developments and investments.',
+
+  },
+  {
+    img: 'https://ik.imagekit.io/6djsamqli/primehomepropmart/residential-plots_25SCUjg8H.png?updatedAt=1725427993675',
     title: 'Residential Plots',
     description: 'Find the perfect residential plots in well-planned communities for your dream home.',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: 'https://ik.imagekit.io/6djsamqli/primehomepropmart/farming-land_XtHnFhEF-.png?updatedAt=1725427934033',
     title: 'Farming Land',
     description: 'Ideal farming land with fertile soil for a variety of crops and sustainable agriculture.',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: 'https://ik.imagekit.io/6djsamqli/primehomepropmart/industrial-plots_lkM62Z8C6.png?updatedAt=1725428019755',
     title: 'Industrial Plots',
     description: 'Strategically located industrial plots for manufacturing and warehousing facilities.',
   },
-  {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Semi-Commercial Plots',
-    description: 'Semi-commercial plots ideal for businesses and small enterprises with residential options.',
-  }
+
 ];
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
@@ -47,7 +49,7 @@ const Services = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <div className="px-[25px] md:px-[75px] py-[30px] md:py-[70px]">
+    <div id='services' className="px-[25px] md:px-[75px] py-[30px] md:py-[70px]">
       <h4
         className="text-[16px] lg:text-[20px] text-[#4361EE] font-medium"
         style={{ letterSpacing: '2px' }}

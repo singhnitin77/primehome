@@ -46,7 +46,7 @@ const Invest = () => {
   ];
 
   return (
-    <div className="px-[25px] md:px-[300px] py-[30px] md:py-[60px]">
+    <div className="px-[25px] md:px-[300px] py-[30px] md:py-[60px]" id='invest-in-yamuna'>
       <h2 className="text-[30px] md:text-[40px] lg:text-[48px] leading-[1.1] md:leading-[1.25] font-extrabold text-black font-bold text-center mb-8">
         Why to Invest in Yamuna
       </h2>
