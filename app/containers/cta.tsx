@@ -1,6 +1,51 @@
-import React from 'react';
+
+'use client';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export default function CTA() {
+
+  const [status, setStatus] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+
+    // Convert FormData to URLSearchParams
+    const data = new URLSearchParams();
+    formData.forEach((value, key) => {
+      data.append(key, value.toString());
+    });
+
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data.toString()
+    });
+
+    try {
+      const response = await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: data.toString(),
+      });
+
+      if (response.ok) {
+        setStatus('Your message has been sent successfully!');
+        toast.success('Your message has been sent successfully!')
+        setError(null);
+      } else {
+        // throw new Error('Failed to send your message. Please try again later.');
+        toast.error('Failed to send your message. Please try again later.')
+      }
+    } catch (error) {
+      setStatus(null);
+      // setError(error && error.message);
+    }
+  };
+
   return (
     <div className="py-24 bg-white" id="cta">
       <div className="mx-auto px-5 md:px-[100px]">
@@ -21,17 +66,17 @@ export default function CTA() {
             <form
               className="grid grid-cols-1 sm:grid-cols-2 gap-6"
               // action="https://formsubmit.co/omshreetraders07@gmail.com"
-              method="POST"
               data-netlify="true"
               name="contact"
+              onSubmit={handleFormSubmit}
             >
               <div>
-                <label htmlFor="full-name" className="block text-sm font-medium mb-2">Full Name</label>
+                <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name</label>
                 <input
-                  id="full-name"
+                  id="name"
                   type="text"
                   placeholder="Nitin Singh"
-                  name="full-name"
+                  name="name"
                   required
                   className="w-full p-3 text-gray-900 rounded-lg focus:outline-none focus:ring-4 focus:ring-purple-300"
                 />
@@ -60,7 +105,7 @@ export default function CTA() {
                 />
               </div>
 
-              <button className="btn--form sm:col-span-2 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              <button type='submit' className="btn--form sm:col-span-2 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 Get in Touch
               </button>
             </form>

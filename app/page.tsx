@@ -13,6 +13,7 @@ import {
 import Testimonials from "./containers/testimonials";
 import { Box } from "@mui/material";
 import WhatsappButton from "./components/WhatsappButton";
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <CTA />
       <Footer />
       <WhatsappButton />
+      <ToastContainer />
     </Box>
   );
 }
