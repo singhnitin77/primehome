@@ -35,10 +35,14 @@ export default function CTA() {
       if (response.ok) {
         setStatus('Your message has been sent successfully!');
         // toast.success('Your message has been sent successfully!')
+        console.log('submitted');
+
         setError(null);
       } else {
         // throw new Error('Failed to send your message. Please try again later.');
         // toast.error('Failed to send your message. Please try again later.')
+        console.log('failed');
+
       }
     } catch (error) {
       setStatus(null);
@@ -69,6 +73,7 @@ export default function CTA() {
               data-netlify="true"
               name="contact"
               onSubmit={handleFormSubmit}
+              action='077605ee9ba760556b3b63ba30cf4fbd'
             >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name</label>
